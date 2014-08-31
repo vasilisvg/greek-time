@@ -17,6 +17,7 @@ html {
 }
 body {
 	color: hsl(224,42%,27%);
+	height: 90%;
 	height: 90vh;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -30,7 +31,9 @@ body {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font: 30vw/1 "Fedra Sans Screen Regular", helvetica, arial, sans-serif;
+	font-family: "Fedra Sans Screen Regular", helvetica, arial, sans-serif;
+	font-size: 17em;
+	font-size: 30vw;
 	margin: 0;
 	padding:0;
 }
@@ -45,19 +48,19 @@ if(isset($_GET["loop"])) {
 ?>
 <time lang="el" timestamp="" class="dio-lepta"></time>
 <script>
-var timeEl = document.querySelector('time');
 
 function greekHours(n) {
 	var hr = Math.floor(Math.random() * 3600000 + 1);
 	var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
-	hr = hr * plusOrMinus;
+	var hr = hr * plusOrMinus;
 	return ((n + hr)*1);
 }
 
 function setGreekTime(dateNow) {
-	now = new Date(greekHours(dateNow));
-	hours = now.getHours();
-	minutes = now.getMinutes();
+	var timeEl = document.querySelector('time');
+	var now = new Date(greekHours(dateNow));
+	var hours = now.getHours();
+	var minutes = now.getMinutes();
 	if (hours < 10) {
 		hours = '0' + hours;
 	}
