@@ -36,7 +36,7 @@ body {
 <body>
 <?php
 if(isset($_GET["loop"])) {
-	echo '<video autoplay loop style="width: 1px;position:absolute;"><source src="ding.mp4" type=video/mp4></video>';
+	echo '<video autoplay loop style="width: 1px;height:1px;position:absolute;"><source src="ding.mp4" type=video/mp4></video>';
 	echo '<script>document.querySelector("title").innerHTML = "&nbsp;";</script>';
 }
 ?>
