@@ -34,6 +34,7 @@ body {
 	font-family: "Fedra Sans Screen Regular", helvetica, arial, sans-serif;
 	font-size: 17em;
 	font-size: 30vw;
+	line-height: 1;
 	margin: 0;
 	padding:0;
 }
