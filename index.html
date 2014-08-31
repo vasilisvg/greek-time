@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Greek Time</title>
+	<meta name="description" content="The Greek preception of time: current time give or take one hour. Updates every two minutes.">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
+<style>
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font: 30vw/1 "Fedra Sans Screen Regular", helvetica, arial, sans-serif;
+	margin: 0;
+	padding:0;
+}
+</style>
+</head>
+<body>
+<time lang="el" timestamp="" class="dio-lepta"></time>
+<script>
+var timeEl = document.querySelector('time');
+
+function greekHours(n) {
+	var hr = Math.floor(Math.random() * 3600000 + 1);
+	var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+	hr = hr * plusOrMinus;
+	return ((n + hr)*1);
+}
+
+function setGreekTime(dateNow) {
+	now = new Date(greekHours(dateNow));
+	hours = now.getHours();
+	minutes = now.getMinutes();
+	if (hours < 10) {
+		hours = '0' + hours;
+	}
+	if (minutes < 10) {
+		minutes = '0' + minutes;
+	}
+	timeEl.innerHTML = hours + ':' + minutes;
+}
+setGreekTime(Date.now());
+
+
+setInterval(function(){
+	setGreekTime(Date.now());
+},120000);
+
+</script>
+</body>
+</html>
