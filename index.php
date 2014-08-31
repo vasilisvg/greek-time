@@ -9,6 +9,10 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
 <style>
+html {
+	height: 100%;
+	background: white;
+}
 body {
 	height: 90vh;
 	display: -webkit-box;
