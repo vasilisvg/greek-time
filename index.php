@@ -34,6 +34,12 @@ body {
 </style>
 </head>
 <body>
+<?php
+if(isset($_GET["loop"])) {
+	echo '<video autoplay loop style="width: 1px;position:absolute;"><source src="ding.mp4" type=video/mp4></video>';
+	echo '<script>document.querySelector("title").innerHTML = "&nbsp;";</script>';
+}
+?>
 <time lang="el" timestamp="" class="dio-lepta"></time>
 <script>
 var timeEl = document.querySelector('time');
