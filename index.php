@@ -9,6 +9,7 @@
 	<meta name="apple-mobile-web-app-title" content="Greek Time">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="refresh" content="120">
 	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
 <style>
 html {
@@ -46,8 +47,16 @@ if(isset($_GET["loop"])) {
 	echo '<video autoplay loop style="width: 1px;height:1px;position:absolute;"><source src="ding.mp4" type=video/mp4></video>';
 	echo '<script>document.querySelector("title").innerHTML = "&nbsp;";</script>';
 }
+if( ! ini_get('date.timezone') ) {
+    date_default_timezone_set('Europe/Amsterdam');
+}
+
+$plm = rand(0,1) < 1 ? -1 : 1 ;
+$nextWeek = time() + ($plm * 1 * rand(0,60) * 60);
+$inAnHour = date('H:i', $nextWeek)
+
 ?>
-<time lang="el" timestamp="" class="dio-lepta"></time>
+<time><?php echo $inAnHour; ?></time>
 <script>
 
 function greekHours(n) {
@@ -58,7 +67,7 @@ function greekHours(n) {
 }
 
 function setGreekTime(dateNow) {
-	var timeEl = document.querySelector('time');
+	var timeEl = document.getElementsByTagName('time')[0];
 	var now = new Date(greekHours(dateNow));
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
@@ -70,8 +79,8 @@ function setGreekTime(dateNow) {
 	}
 	timeEl.innerHTML = hours + ':' + minutes;
 }
-setGreekTime(Date.now());
 
+document.querySelector('[name=refresh]').setAttribute('content','31536000');
 
 setInterval(function(){
 	setGreekTime(Date.now());
