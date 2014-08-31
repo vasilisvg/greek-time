@@ -80,6 +80,7 @@ function setGreekTime(dateNow) {
 	timeEl.innerHTML = hours + ':' + minutes;
 }
 
+setGreekTime(Date.now());
 document.querySelector('[name=refresh]').setAttribute('content','31536000');
 
 setInterval(function(){
