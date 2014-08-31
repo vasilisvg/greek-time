@@ -11,9 +11,10 @@
 <style>
 html {
 	height: 100%;
-	background: white;
+	background: hsl(120,2%,89%);
 }
 body {
+	color: hsl(224,42%,27%);
 	height: 90vh;
 	display: -webkit-box;
 	display: -webkit-flex;
