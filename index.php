@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Greek Time</title>
 	<meta name="description" content="The Greek preception of time: current time give or take one hour. Updates every two minutes.">
+	<meta name="application-name" content="Greek Time">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
