@@ -46,7 +46,7 @@ body {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font-family: "Fedra Sans Screen Regular Bold", helvetica, arial, sans-serif;
+	font-family: "Fedra Sans Screen Bold", helvetica, arial, sans-serif;
 	font-size: 13em;
 	font-size: 30vw;
 	line-height: 1;
