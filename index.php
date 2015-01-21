@@ -57,7 +57,7 @@ body {
 }
 time a {
 	display: block;
-	font-size: .8em;
+	font-size: .8rem;
 }
 </style>
 </head>
