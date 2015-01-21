@@ -24,7 +24,6 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="refresh" content="120">
-	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-006956.css">
 	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-007762.css">
 <style>
 html {
@@ -52,7 +51,7 @@ body {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font-family: Irma, "Fedra Sans Screen Bold", helvetica, arial, sans-serif;
+	font-family: Irma, helvetica, arial, sans-serif;
 	font-size: 13em;
 	font-size: 30vw;
 	font-weight: 800;
