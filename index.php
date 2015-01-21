@@ -59,7 +59,10 @@ time a {
 	display: block;
 	font-size: .7rem;
 	color: inherit;
-	margin-left: .1rem;
+	margin-left: .3vw;
+}
+time .h4 {
+	margin-left: 12.2vw;
 }
 </style>
 </head>
