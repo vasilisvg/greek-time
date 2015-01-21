@@ -46,7 +46,7 @@ body {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	font-family: "Fedra Sans Screen Regular", helvetica, arial, sans-serif;
+	font-family: "Fedra Sans Screen Regular Bold", helvetica, arial, sans-serif;
 	font-size: 13em;
 	font-size: 30vw;
 	line-height: 1;
@@ -74,14 +74,14 @@ $inAnHour = date('H:i', $nextWeek)
 <script>
 
 function greekHours(n) {
-	var hr = Math.floor(Math.random() * 3600000 + 1);
 	var plusOrMinus = Math.random() < 0.5 ? -1 : 1;
+	var hr = Math.floor(Math.random() * 3600000 + 1);
 	var hr = hr * plusOrMinus;
 	return ((n + hr)*1);
 }
 
 function setGreekTime(dateNow) {
-	var timeEl = document.getElementsByTagName('time')[0];
+	var timeEl = document.querySelector('time');
 	var now = new Date(greekHours(dateNow));
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
