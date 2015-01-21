@@ -70,6 +70,9 @@ time a {
 .h9 a {
 	margin-left: 3.9vw;
 }
+.h0 a {
+	margin-left: 1vw;
+}
 </style>
 </head>
 <body>
