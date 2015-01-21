@@ -64,6 +64,9 @@ time a {
 .h4 a {
 	margin-left: 12.2vw;
 }
+.h7 a {
+	margin-left: 20vw;
+}
 </style>
 </head>
 <body>
