@@ -113,6 +113,7 @@ function setGreekTime(dateNow) {
 		minutes = '0' + minutes;
 	}
 	timeEl.innerHTML = hours + ':' + minutes + link;
+	timeEl.className = 'h' + hours;
 }
 
 setGreekTime(Date.now());
