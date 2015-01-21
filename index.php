@@ -28,10 +28,10 @@
 <style>
 html {
 	height: 100%;
-	background:  hsl(54, 100%, 90%);
+	background:  hsl(54, 100%, 96%);
 }
 body {
-	color:  hsl(188, 58%, 39.5%);
+	color:  hsl(188, 58%, 34%);
 	height: 90%;
 	height: 90vh;
 	display: -webkit-box;
