@@ -77,7 +77,7 @@ $nextWeek = time() + ($plm * 1 * rand(0,60) * 60);
 $inAnHour = date('H:i', $nextWeek)
 
 ?>
-<time><?php echo $inAnHour; ?></time>
+<time class="h<?php echo $inAnHour[0]; ?>"><?php echo $inAnHour; ?></time>
 <script>
 
 function greekHours(n) {
