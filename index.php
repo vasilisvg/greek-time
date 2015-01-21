@@ -57,7 +57,7 @@ body {
 }
 time a {
 	display: block;
-	font-size: .8rem;
+	font-size: .7rem;
 	color: inherit;
 }
 </style>
