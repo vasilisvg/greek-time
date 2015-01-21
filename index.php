@@ -30,6 +30,11 @@
 html {
 	height: 100%;
 	background:  hsl(54, 100%, 90%);
+	text-rendering: optimizeLegibility;
+		-webkit-font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+	   	   -moz-font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+	            font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+		-webkit-text-size-adjust: 100%;
 }
 body {
 	color:  hsl(188, 58%, 34%);
