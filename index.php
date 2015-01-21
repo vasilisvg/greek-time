@@ -28,7 +28,7 @@
 <style>
 html {
 	height: 100%;
-	background:  hsl(54, 100%, 96%);
+	background:  hsl(54, 100%, 90%);
 }
 body {
 	color:  hsl(188, 58%, 34%);
