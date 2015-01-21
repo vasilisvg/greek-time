@@ -59,6 +59,7 @@ time a {
 	display: block;
 	font-size: .7rem;
 	color: inherit;
+	margin-left: .1rem;
 }
 </style>
 </head>
