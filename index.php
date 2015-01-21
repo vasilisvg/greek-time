@@ -61,7 +61,7 @@ time a {
 	color: inherit;
 	margin-left: .3vw;
 }
-time .h4 {
+.h4 a {
 	margin-left: 12.2vw;
 }
 </style>
