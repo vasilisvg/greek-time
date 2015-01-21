@@ -55,6 +55,10 @@ body {
 	margin: 0;
 	padding:0;
 }
+time a {
+	display: block;
+	font-size: .8em;
+}
 </style>
 </head>
 <body>
@@ -83,6 +87,7 @@ function greekHours(n) {
 }
 
 function setGreekTime(dateNow) {
+	var link = ' <a href="http://lovenonsense.com/307">What’s this?</a>';
 	var timeEl = document.querySelector('time');
 	var now = new Date(greekHours(dateNow));
 	var hours = now.getHours();
@@ -93,7 +98,7 @@ function setGreekTime(dateNow) {
 	if (minutes < 10) {
 		minutes = '0' + minutes;
 	}
-	timeEl.innerHTML = hours + ':' + minutes;
+	timeEl.innerHTML = hours + ':' + minutes + link;
 }
 
 setGreekTime(Date.now());
