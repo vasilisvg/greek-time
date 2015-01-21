@@ -51,13 +51,14 @@ body {
 	font-size: 13em;
 	font-size: 30vw;
 	font-weight: 800;
-	line-height: 1;
+	line-height: .8;
 	margin: 0;
 	padding:0;
 }
 time a {
 	display: block;
 	font-size: .8rem;
+	color: inherit;
 }
 </style>
 </head>
