@@ -87,7 +87,7 @@ if( ! ini_get('date.timezone') ) {
 
 $plm = rand(0,1) < 1 ? -1 : 1 ;
 $nextWeek = time() + ($plm * 1 * rand(0,60) * 60);
-$inAnHour = date('H:i', $nextWeek)
+$inAnHour = date('G:i', $nextWeek)
 
 ?>
 <time class="h<?php echo $inAnHour[0]; ?>"><?php echo $inAnHour; ?></time>
