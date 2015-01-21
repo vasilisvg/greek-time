@@ -50,7 +50,7 @@ body {
 	font-family: Irma, "Fedra Sans Screen Bold", helvetica, arial, sans-serif;
 	font-size: 13em;
 	font-size: 30vw;
-	font-weight: 900;
+	font-weight: 800;
 	line-height: 1;
 	margin: 0;
 	padding:0;
