@@ -64,6 +64,9 @@ time a {
 .h4 a {
 	margin-left: 12.2vw;
 }
+.h6 a {
+	margin-left: 22.1vw;
+}
 .h7 a {
 	margin-left: 20vw;
 }
@@ -71,7 +74,7 @@ time a {
 	margin-left: 3.9vw;
 }
 .h0 a {
-	margin-left: 1vw;
+	margin-left: 23vw;
 }
 </style>
 </head>
