@@ -126,7 +126,7 @@ function setGreekTime(dateNow) {
 
 }
 
-//setGreekTime(Date.now());
+setGreekTime(Date.now());
 document.querySelector('[name=refresh]').setAttribute('content','31536000');
 
 setInterval(function(){
