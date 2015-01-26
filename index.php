@@ -115,12 +115,18 @@ function setGreekTime(dateNow) {
 	if (minutes < 10) {
 		minutes = '0' + minutes;
 	}
-	hourEl.innerHTML = hours;
-	minEl.innerHTML = minutes;
-	timeEl.className = 'h' + hours;
+	
+	setTimeout(function(){
+		hourEl.innerHTML = hours;
+		timeEl.className = 'h' + hours;
+		setTimeout(function(){
+			minEl.innerHTML = minutes;
+		},100);
+	},100);
+
 }
 
-setGreekTime(Date.now());
+//setGreekTime(Date.now());
 document.querySelector('[name=refresh]').setAttribute('content','31536000');
 
 setInterval(function(){
