@@ -115,8 +115,8 @@ function setGreekTime(dateNow) {
 	if (minutes < 10) {
 		minutes = '0' + minutes;
 	}
-	hourEl.innerHTML = hours + ':' + minutes + link;
-	minEl.innerHTML = hours + ':' + minutes + link;
+	hourEl.innerHTML = hours;
+	minEl.innerHTML = minutes;
 	timeEl.className = 'h' + hours;
 }
 
