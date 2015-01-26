@@ -107,13 +107,16 @@ function greekHours(n) {
 function setGreekTime(dateNow) {
 	var link = ' <a href="http://lovenonsense.com/307">What’s this?</a>';
 	var timeEl = document.querySelector('time');
+	var hourEl = document.querySelector('time span');
+	var minEl = document.querySelector('time span:last-of-type');
 	var now = new Date(greekHours(dateNow));
 	var hours = now.getHours();
 	var minutes = now.getMinutes();
 	if (minutes < 10) {
 		minutes = '0' + minutes;
 	}
-	timeEl.innerHTML = hours + ':' + minutes + link;
+	hourEl.innerHTML = hours + ':' + minutes + link;
+	minEl.innerHTML = hours + ':' + minutes + link;
 	timeEl.className = 'h' + hours;
 }
 
