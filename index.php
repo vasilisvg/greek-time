@@ -94,7 +94,7 @@ $inAnHour = date('G', $nextWeek);
 $inAMinute = date('i', $nextWeek);
 
 ?>
-<time class="h<?php echo $inAnHour[0]; ?>"><span><?php echo $inAnHour; ?></span>:<span><?php echo $inAMinute; ?></span></time>
+<time class="h<?php echo $inAnHour[0]; ?>"><span><?php echo $inAnHour; ?></span>:<span><?php echo $inAMinute; ?></span> <a href="http://lovenonsense.com/307">What’s this?</a></time>
 <script>
 
 function greekHours(n) {
