@@ -60,8 +60,8 @@ time a {
 	font-size: .7rem;
 	color: inherit;
 	margin-left: .3vw;
-	-webkit-transition: .2s .3s;
-	        transition: .2s .3s;
+	-webkit-transition: .3s cubic-bezier(.6,.01,.89,1);
+	        transition: .3s cubic-bezier(.6,.01,.89,1);
 }
 .h4 a {
 	margin-left: 12.2vw;
