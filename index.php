@@ -106,7 +106,7 @@ function greekHours(n) {
 	return ((n + hr)*1);
 }
 
-function setGreekTime(dateNow) {
+function setGreekTime(dateNow,x) {
 	var link = ' <a href="http://lovenonsense.com/307">What’s this?</a>';
 	var timeEl = document.querySelector('time');
 	var hourEl = document.querySelector('time span');
@@ -117,22 +117,28 @@ function setGreekTime(dateNow) {
 	if (minutes < 10) {
 		minutes = '0' + minutes;
 	}
-	
-	setTimeout(function(){
+	if (x === 0) {
 		hourEl.innerHTML = hours;
 		timeEl.className = 'h' + hours;
+		minEl.innerHTML = minutes;
+	}
+	else {
 		setTimeout(function(){
-			minEl.innerHTML = minutes;
+			hourEl.innerHTML = hours;
+			timeEl.className = 'h' + hours;
+			setTimeout(function(){
+				minEl.innerHTML = minutes;
+			},100);
 		},100);
-	},100);
+	}
 
 }
 
-setGreekTime(Date.now());
+setGreekTime(Date.now(),0);
 document.querySelector('[name=refresh]').setAttribute('content','31536000');
 
 setInterval(function(){
-	setGreekTime(Date.now());
+	setGreekTime(Date.now(),1);
 },120000);
 
 </script>
