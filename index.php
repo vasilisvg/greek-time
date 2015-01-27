@@ -60,8 +60,8 @@ time a {
 	font-size: .7rem;
 	color: inherit;
 	margin-left: .3vw;
-	-webkit-transition: .2s;
-	        transition: .2s;
+	-webkit-transition: .2s .3s;
+	        transition: .2s .3s;
 }
 .h4 a {
 	margin-left: 12.2vw;
