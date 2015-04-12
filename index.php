@@ -24,7 +24,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="refresh" content="120">
-	<link rel="stylesheet" href="http://fonts.typotheque.com/WF-023273-007762.css">
+	<link rel="stylesheet" href="https://fonts.typotheque.com/WF-023273-007762.css">
 <style>
 html {
 	height: 100%;
